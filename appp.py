@@ -16,7 +16,7 @@ def safe_model_loader():
     """Safely load model with multiple fallback methods"""
     try:
         # Method 1: Standard load
-        model = joblib.load("train_model.joblib")
+        model = joblib.load("waste_collection_model.joblib")
         st.success("✅ Model loaded successfully!")
         return model
     except Exception as e:
